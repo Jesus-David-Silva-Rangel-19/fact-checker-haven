@@ -1,6 +1,7 @@
 
 import { AlertCircle, Search, Shield } from "lucide-react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import FactChecker from "../components/FactChecker";
 import InfoCard from "../components/InfoCard";
@@ -10,18 +11,18 @@ const Index = () => {
   const features = [
     {
       icon: <AlertCircle className="w-6 h-6" />,
-      title: "Instant Detection",
-      description: "Our AI-powered system analyzes content in real-time to identify potential misinformation.",
+      title: "Detección Instantánea",
+      description: "Nuestro sistema impulsado por IA analiza contenido en tiempo real para identificar posible desinformación.",
     },
     {
       icon: <Search className="w-6 h-6" />,
-      title: "Deep Analysis",
-      description: "We cross-reference multiple reliable sources to verify information accuracy.",
+      title: "Análisis Profundo",
+      description: "Verificamos la información comparando múltiples fuentes confiables.",
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      title: "Stay Protected",
-      description: "Get instant alerts about misleading content before sharing it with others.",
+      title: "Mantente Protegido",
+      description: "Recibe alertas instantáneas sobre contenido engañoso antes de compartirlo.",
     },
   ];
 
@@ -45,6 +46,7 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
