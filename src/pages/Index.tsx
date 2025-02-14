@@ -1,5 +1,6 @@
 
-import { AlertCircle, Search, Shield, BookOpen } from "lucide-react";
+import { AlertCircle, Search, Shield } from "lucide-react";
+import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import FactChecker from "../components/FactChecker";
 import InfoCard from "../components/InfoCard";
@@ -25,23 +26,26 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 py-12 space-y-20">
-        <HeroSection />
-        
-        <div className="space-y-12">
-          <FactChecker />
+    <>
+      <Header />
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4 py-12 space-y-20">
+          <HeroSection />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <InfoCard key={index} {...feature} />
-            ))}
+          <div className="space-y-12">
+            <FactChecker />
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((feature, index) => (
+                <InfoCard key={index} {...feature} />
+              ))}
+            </div>
+            
+            <LatestNews />
           </div>
-          
-          <LatestNews />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
