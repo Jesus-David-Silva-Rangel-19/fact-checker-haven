@@ -1,6 +1,4 @@
 
-import { UkrainianFlag } from "lucide-react";
-
 const Header = () => {
   return (
     <div className="w-full bg-blue-500 text-white py-2">
